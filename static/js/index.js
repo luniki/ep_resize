@@ -66,6 +66,7 @@ const sendResizeMessage = (width, height) => {
 };
 
 exports.aceEditEvent = (event, context) => {
+  console.log("ep_resize", event, context);
   const padOuter = document.querySelector('iframe[name="ace_outer"]');
   const padInner = padOuter.contentWindow.document.querySelector('iframe[name="ace_inner"]');
   const popups = document.getElementsByClassName('popup-show');
@@ -120,6 +121,7 @@ exports.aceEditEvent = (event, context) => {
 };
 
 exports.goToRevisionEvent = (hook, context) => {
+  console.log("ep_resize", hook, context);
   const editbar = document.getElementById('editbar');
   const elem = document.getElementById('outerdocbody');
   const newHeight = elOuterHeight(elem) + (editbar ? elOuterHeight(editbar) : 0);
