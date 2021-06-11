@@ -3,9 +3,9 @@
         {
             "name": "ep_resize",
             "client_hooks": {
-                "aceEditorCSS": "ep_resize/static/js/index",
+                "aceEditorCSS": "ep_resize/static/js/index:aceEditorCSS",
                 "aceEditEvent": "ep_resize/static/js/index:aceEditEvent",
-                "goToRevisionEvent": "ep_resize/static/js/index"
+                "goToRevisionEvent": "ep_resize/static/js/index:goToRevisionEvent"
             }
         }
     ]
